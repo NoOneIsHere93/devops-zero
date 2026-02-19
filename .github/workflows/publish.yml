@@ -28,8 +28,8 @@ jobs:
           context: ./web
           push: true
           tags: |
-            ghcr.io/NoOneIsHere93/day4-web:latest
-            ghcr.io/NoOneIsHere93/day4-web:${{ github.sha }}
+            ghcr.io/nooneishere93/day4-web:latest
+            ghcr.io/nooneishere93/day4-web:${{ github.sha }}
 
       - name: Build & push api
         uses: docker/build-push-action@v6
@@ -37,6 +37,6 @@ jobs:
           context: ./api
           push: true
           tags: |
-            ghcr.io/NoOneIsHere93/day4-api:latest
-            ghcr.io/NoOneIsHere93/day4-api:${{ github.sha }}
+            ghcr.io/nooneishere93/day4-api:latest
+            ghcr.io/nooneishere93/day4-api:${{ github.sha }}
 
